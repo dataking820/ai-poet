@@ -15,16 +15,22 @@ ai-poet는 사용자가 입력한 주제를 기반으로 시를 생성하는 인
    ```
 
 ## 설정 방법
-1. OpenAI API 키를 환경 변수에 추가하거나 .env 파일에 추가합니다.
-   - 환경 변수 추가 방법:
+1. 환경변수 추가방법
+   - OpenAI API 키를 환경 변수에 추가합니다.
      ```
      export OPENAI_API_KEY='your-api-key'
      ```
-   - .env 파일에 추가 방법:
+2. .env 파일에 추가하는 방법
+   - OpenAI API 키를 .env 파일에 추가합니다.
      ```
      OPENAI_API_KEY='your-api-key'
      ```
-2. .env 파일을 사용하는 경우, 이 파일을 프로젝트 루트 디렉토리에 위치시킵니다.
+   - 이 파일을 프로젝트 루트 디렉토리에 위치시킵니다. 
+   - 그리고 main.py 파일에서 아래 주석을 해제해줍니다.
+     ```
+     # from dotenv import load_dotenv
+     # load_dotenv()
+     ```
 
 ## 실행 방법
 1. Streamlit를 실행합니다.
